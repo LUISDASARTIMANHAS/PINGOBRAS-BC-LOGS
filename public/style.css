@@ -1,6 +1,4 @@
-/* this file is loaded by index.html and styles the page */
-
-* {
+*{
   box-sizing: border-box;
 }
 
@@ -9,7 +7,6 @@ body {
   width: 100%;
   justify-content: center;
   font-family: sans-serif;
-  margin: 2em 1em;
   line-height: 1.5em;
 }
 
@@ -21,7 +18,7 @@ h1 {
 }
 
 form {
-  background-image: linear-gradient(45deg, blue, white) ;
+  background-image: linear-gradient(45deg, gold, silver) ;
   display: grid;
   grid-gap: 1em;
   padding: 1em;
@@ -38,7 +35,7 @@ input {
 }
 
 form button {
-      background-color: gray;
+      background-color: silver;
         border: 5px solid black;
         padding: 7px;
         width: 100%;
@@ -46,13 +43,12 @@ form button {
         color: white;
         font-size: 15px;
         font-weight: bold;
-        margin-top: 10px;
         display: flex;
         justify-content: center;
 }
 
 form button:hover {
-background-image: linear-gradient(45deg, gray, green);
+background-image: linear-gradient(45deg, silver, gold);
   cursor: pointer;
   box-shadow: -8px 20px 20px gray;
   transform: translateY(5px);
@@ -64,7 +60,7 @@ footer {
   border-top: 1px solid lightgrey;
 }
 .tela{
-        background-color:  linear-gradient(45deg, blue, green);
+        background-color:  linear-gradient(45deg, gold, silver);
         position: absolute;
         justify-content: center;
         padding: 60px;
