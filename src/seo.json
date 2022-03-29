@@ -1,8 +1,8 @@
 {
   "glitch-help-instructions": "For a custom domain, change the 'url' parameter from 'glitch-default' to your domain _without_ a traling slash, like 'https://www.example.com'",
-  "title": "pingobras LOGS ",
+  "title": "PINGOBRAS LOGS ",
   "description": "BANCO DE REGISTRO DA PINGOBRAS",
   "url": "glitch-default",
-  "image": "https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/2020-11-03_12-58-10-1.jpg?v=1643163953526",
+  "image": "https://cdn.glitch.global/93f8d5f7-cbcd-4cbd-bc49-aaa9ff2573cc/artigo-conceitos-fundamentais-de-banco-de-dados-1649.png?v=1648572377453",
   "db": "SQLite"
 }

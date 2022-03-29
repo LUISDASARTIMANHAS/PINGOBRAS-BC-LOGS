@@ -35,3 +35,8 @@ const listener = app.listen(process.env.PORT, () => {
 
 
 
+// Load and parse SEO data
+const seo = require("./src/seo.json");
+if (seo.url === "glitch-default") {
+  seo.url = `https://${process.env.PROJECT_DOMAIN}.glitch.me`;
+}
