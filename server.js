@@ -167,3 +167,4 @@ fastify.get("/logs", async (request, reply) => {
  */
 fastify.post("/reset", async (request, reply) => {
   let params = request.query.raw ? {} : { seo: seo };
+})
