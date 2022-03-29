@@ -21,7 +21,7 @@ h1 {
 }
 
 form {
-  background-color: #eee;
+  background-image: linear-gradient(45deg, blue, white) ;
   display: grid;
   grid-gap: 1em;
   padding: 1em;
@@ -38,22 +38,38 @@ input {
 }
 
 form button {
-  background-color: #bbbbf2;
-  border: 2px solid currentColor;
-  border-radius: .25em;
-  cursor: pointer;
-  font-size: inherit;
-  line-height: 1.4em;
-  padding: 0.25em 1em;
-  max-width: 20ch;
+      background-color: gray;
+        border: 5px solid black;
+        padding: 7px;
+        width: 100%;
+        border-radius: 15px;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
 }
 
 form button:hover {
-  background-color: lavender;
-}
+background-image: linear-gradient(45deg, gray, green);
+  cursor: pointer;
+  box-shadow: -8px 20px 20px gray;
+  transform: translateY(5px);
+  transition: all 1s ease-out;}
 
 footer {
   margin-top: 3em;
   padding-top: 1.5em;
   border-top: 1px solid lightgrey;
 }
+.tela{
+        background-color:  linear-gradient(45deg, blue, green);
+        position: absolute;
+        justify-content: center;
+        padding: 60px;
+        border-radius: 20px;
+        color: black;
+        box-shadow: 3px 3px 43px 0px black;
+        }
+
