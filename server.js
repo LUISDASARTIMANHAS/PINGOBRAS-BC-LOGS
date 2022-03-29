@@ -19,7 +19,7 @@ app.use(express.static("public"));
 
 // https://expressjs.com/en/starter/basic-routing.html
 app.get("/", (request, response) => {
-  response.sendFile(__dirname + "/views/index.html");
+  response.sendFile(__dirname + "/src/pages/index.html");
 });
 
 // send the default array of dreams to the webpage
@@ -32,6 +32,7 @@ app.get("/dreams", (request, response) => {
 const listener = app.listen(process.env.PORT, () => {
   console.log("Your app is listening on port " + listener.address().port);
 });
+
 
 
 // Utilities we need
@@ -135,39 +136,8 @@ fastify.post("/", async (request, reply) => {
   // Return the info to the client
   request.query.raw
     ? reply.send(params)
-    : reply.view("/src/pages/index.hbs", params);
+    : reply.view("/src/pages/index.html", params);
 });
-
-/**
- * Admin endpoint returns log of votes
- *
- * Send raw json or the admin handlebars page
- */
-fastify.get("/logs", async (request, reply) => {
-  let params = request.query.raw ? {} : { seo: seo };
-
-  // Get the log history from the db
-  params.optionHistory = await db.getLogs();
-
-  // Let the user know if there's an error
-  params.error = params.optionHistory ? null : data.errorMessage;
-
-  // Send the log list
-  request.query.raw
-    ? reply.send(params)
-    : reply.view("/src/pages/admin.hbs", params);
-});
-
-/**
- * Admin endpoint to empty all logs
- *
- * Requires authorization (see setup instructions in README)
- * If auth fails, return a 401 and the log list
- * If auth is successful, empty the history
- */
-fastify.post("/reset", async (request, reply) => {
-  let params = request.query.raw ? {} : { seo: seo };
-})
 
 // Run the server and report out to the logs
 fastify.listen(process.env.PORT, '0.0.0.0', function(err, address) {
