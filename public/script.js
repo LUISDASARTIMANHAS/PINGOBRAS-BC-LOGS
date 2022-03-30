@@ -29,12 +29,12 @@ fetch("/dreams")
       // impedir que nosso envio de formulário atualize a página
       event.preventDefault();
 
-      // get dream value and add it to the list
-      let newDream = dreamsForm.elements.dream.value;
-      dreams.push(newDream);
-      appendNewDream(newDream);
+      // obter o valor do sonho e adicioná-lo à lista
+      let NOVOREGISTRO = dreamsForm.elements.dream.value;
+      dreams.push(NOVOREGISTRO);
+      appendNewDream(NOVOREGISTRO);
 
-      // reset form
+      // redefinir formulário
       dreamsForm.reset();
       dreamsForm.elements.dream.focus();
     });
