@@ -1,53 +1,18 @@
-
-:root {
-  --color-padrao: white;
-  --color-text-main: #000000;
-  --color-primary: #FFFF00;
-  --wrapper-altura: 87vh;
-  --image-max-largura: 100px;
-  --image-margin: 1rem;
-  --font-principal: "Arial";
-  --font-family-cabecalho: "Roboto, sans-serif;";
-  --max-largura: 144px;
-  --max-altura: 544px;
-  --max-peso: 500;
-  --font-tamanho: 15px;
-  --font-tamanho-cabecalho: 20px;
-  --fundo-padrao: white;
-  --negrito: bold;
-  --espaco-em-branco: nowrap;
-  --btn-tamanho: 10pt;
-  --sub-tamanho: 17pt;
-  --X: 0px;
-  --Y: 390px;
-   
-  --display: flex formato de celular;
-  --height: "altuta";
-  --Weight: "peso";
-  --width: "largura";
-  --white-space: "espaco em branco";
-    
-}
-/* Basic page style resets */
-*  {
+* {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-}
-
-body {
-  background-image: linear-gradient(45deg, cyan, purple);
-  width: 100%;
-  justify-content: center;
   font-family: sans-serif;
 }
 
+
+body {
+      font-family: sans-serif;
+       background-image: linear-gradient(45deg, cyan, purple);
+       width: 100%;
+       justify-content: center;
+     }
 h1 {
   font-style: italic;
-  color: #373fff;
-  max-width: calc(100% - 5rem);
-  line-height: 1.1;
+  color: blue;
 }
 
 form {
@@ -100,5 +65,6 @@ footer {
         border-radius: 20px;
         color: black;
         box-shadow: 3px 3px 43px 0px black;
+        
         }
 
