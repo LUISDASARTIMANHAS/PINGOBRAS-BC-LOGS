@@ -14,19 +14,19 @@ function appendNewDream(dream) {
   dreamsList.appendChild(newListItem);
 }
 
-// fetch the initial list of dreams
+// buscar a lista inicial de sonhos
 fetch("/dreams")
   .then(response => response.json()) // parse the JSON from the server
   .then(dreams => {
-    // remove the loading text
+    // remova o texto de carregamento
     dreamsList.firstElementChild.remove();
   
-    // iterate through every dream and add it to our page
+    // iterar através de cada sonho e adicioná-lo à nossa página
     dreams.forEach(appendNewDream);
   
-    // listen for the form to be submitted and add a new dream when it is
+    // ouça o formulário a ser enviado e adicione um novo sonho quando for
     dreamsForm.addEventListener("submit", event => {
-      // stop our form submission from refreshing the page
+      // impedir que nosso envio de formulário atualize a página
       event.preventDefault();
 
       // get dream value and add it to the list

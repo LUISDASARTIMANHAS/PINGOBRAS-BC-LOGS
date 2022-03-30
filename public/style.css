@@ -63,13 +63,12 @@ footer {
   justify-content: center;
 }
 .tela{
-        background-color:  linear-gradient(45deg, gold, silver);
-        position: absolute;
-        justify-content: center;
-        padding: 60px;
-        border-radius: 20px;
-        color: black;
-        box-shadow: 3px 3px 43px 3px black;
+   background-color:  linear-gradient(45deg, gold, silver);      position: absolute;
+   justify-content: center;
+   padding: 60px;
+   border-radius: 20px;
+   color: black;
+   box-shadow: 3px 3px 43px 3px black;
         }
 section{
   color: green;
