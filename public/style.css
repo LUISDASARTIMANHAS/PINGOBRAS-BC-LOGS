@@ -1,5 +1,39 @@
-*{
+
+:root {
+  --color-padrao: white;
+  --color-text-main: #000000;
+  --color-primary: #FFFF00;
+  --wrapper-altura: 87vh;
+  --image-max-largura: 100px;
+  --image-margin: 1rem;
+  --font-principal: "Arial";
+  --font-family-cabecalho: "Roboto, sans-serif;";
+  --max-largura: 144px;
+  --max-altura: 544px;
+  --max-peso: 500;
+  --font-tamanho: 15px;
+  --font-tamanho-cabecalho: 20px;
+  --fundo-padrao: white;
+  --negrito: bold;
+  --espaco-em-branco: nowrap;
+  --btn-tamanho: 10pt;
+  --sub-tamanho: 17pt;
+  --X: 0px;
+  --Y: 390px;
+   
+  --display: flex formato de celular;
+  --height: "altuta";
+  --Weight: "peso";
+  --width: "largura";
+  --white-space: "espaco em branco";
+    
+}
+/* Basic page style resets */
+*  {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
