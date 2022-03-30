@@ -30,9 +30,10 @@ fetch("/dreams")
       event.preventDefault();
 
       // obter o valor do sonho e adicioná-lo à lista
-      let NOVOREGISTRO = dreamsForm.elements.dream.value;
+      let NOVOREGISTRO = "VAGA: "+dreamsForm.elements.dream.value;
       dreams.push(NOVOREGISTRO);
       appendNewDream(NOVOREGISTRO);
+      console.log("hello world :o");
 
       // redefinir formulário
       dreamsForm.reset();
