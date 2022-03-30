@@ -64,7 +64,8 @@ footer {
         padding: 60px;
         border-radius: 20px;
         color: black;
-        box-shadow: 3px 3px 43px 0px black;
-        
+        box-shadow: 3px 3px 43px 3px black;
         }
-
+section{
+  color: green;
+}
