@@ -8,9 +8,6 @@ const app = express();
 
 // our default array of dreams
 const dreams = [
-  "VAGA 01: marquinhos",
-  "VAGA 02: douglas",
-  "VAGA 02: betany"
 ];
 
 // make all the files in 'public' available
